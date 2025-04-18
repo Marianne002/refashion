@@ -1,6 +1,5 @@
 // components/ProductDetails.jsx
-import React, { useState } from 'react'
-// Si tu veux utiliser les étoiles, assure-toi d'avoir installé et importé un set d’icônes
+import React, { useState } from 'react';
 // import { StarIcon } from 'lucide-react' ou tout autre lib d’icônes
 
 const ProductDetails = ({ product }) => {
@@ -106,7 +105,7 @@ const ProductDetails = ({ product }) => {
                 <div className="flex items-center mb-2">
                   <div className="flex text-yellow-400">
                     {[...Array(5)].map((_, i) => (
-                      <span key={i}>★</span> // Remplace par <StarIcon /> si tu veux des icônes
+                      <span key={i}>★</span>
                     ))}
                   </div>
                   <h4 className="ml-2 text-sm font-medium text-gray-900">

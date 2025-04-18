@@ -1,1 +1,16 @@
+/* globals.css */
 @import "tailwindcss";
+
+/* Custom Styles */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+footer {
+    background-color: #DCDF6D;
+}
+
+.footer-content {
+    background-color: #000000;
+}

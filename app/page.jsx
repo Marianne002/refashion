@@ -1,7 +1,6 @@
 // app/page.jsx
 "use client";
-import React from 'react'
-
+import React from 'react';
 import ProductGallery from '../components/ProductGallery';
 import ProductInfo from '../components/ProductInfo';
 import ProductDetails from '../components/ProductDetails';
@@ -10,9 +9,9 @@ const Home = () => {
 
   const product = {
     id: 'box-premium-001',
-    name: 'Premium Storage Box',
-    price: 49.99,
-    discount: 59.99,
+    name: 'Box',
+    price: 6,
+    discount: 7,
     description:
       'Our Premium Storage Box is crafted from high-quality corrugated cardboard with reinforced corners for extra durability. Perfect for moving, storage, or organizing your home or office.',
     features: [
@@ -30,10 +29,10 @@ const Home = () => {
       color: 'Kraft brown',
     },
     images: [
-      'https://images.unsplash.com/photo-1595079676341-c7f30680f423?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1607166452427-5b577d4e7be4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      '/img/rebox.png',
+      '/img/rebox.png',
+      '/img/rebox.png',
+      '/img/rebox.png',
     ],
     stock: 42,
     rating: 4.8,
@@ -47,10 +46,9 @@ const Home = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Breadcrumb */}
         <div className="text-sm text-gray-500 mb-6">
-          <span className="hover:text-gray-700 cursor-pointer">Home</span> &gt;{' '}
           <span className="hover:text-gray-700 cursor-pointer">Products</span>{' '}
           &gt;{' '}
-          <span className="font-medium text-gray-700">Premium Storage Box</span>
+          <span className="font-medium text-gray-700">Box</span>
         </div>
         {/* Product Main Section */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">

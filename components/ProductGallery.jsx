@@ -6,7 +6,7 @@ const ProductGallery = ({ images }) => {
 
   return (
     <div className="space-y-4">
-      <div className="bg-white rounded-lg overflow-hidden border border-gray-200">
+      <div className="overflow-hidden">
         <img
           src={mainImage}
           alt="Product main view"

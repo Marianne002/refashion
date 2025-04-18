@@ -6,6 +6,9 @@ import Footer from "../components/Footer";
 const layout = ({ children }) => {
   return (
     <html lang="fr">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body>
         <Navbar />
         <main>

@@ -25,7 +25,7 @@ const ProductInfo = ({ product }) => {
       {/* Rating */}
       <div className="flex items-center">
         <div className="flex text-yellow-400">
-          {/* Tu peux intégrer des icônes ici si besoin */}
+        {/* Stars Icon */}
         </div>
         <span className="ml-2 text-sm text-gray-600">
           {product.rating} ({product.reviewCount} reviews)

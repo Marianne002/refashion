@@ -17,23 +17,7 @@ const Navbar = () => {
                             </svg>
                         </button>
                     </div>
-                    <nav className="hidden md:flex space-x-6">
-                        <a href="/" className="text-gray-800 hover:text-gray-600">
-                            Home
-                        </a>
-                        <a
-                            href="/products"
-                            className="text-gray-800 hover:text-gray-600 font-medium"
-                        >
-                            Products
-                        </a>
-                        <a href="/about" className="text-gray-800 hover:text-gray-600">
-                            About
-                        </a>
-                        <a href="/contact" className="text-gray-800 hover:text-gray-600">
-                            Contact
-                        </a>
-                    </nav>
+                   
                     <div className="flex items-center space-x-4">
                         <button className="text-gray-700 hover:text-gray-900">
                             {/* Search Icon */}
