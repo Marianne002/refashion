@@ -5,7 +5,6 @@ import React from 'react'
 import ProductGallery from '../components/ProductGallery';
 import ProductInfo from '../components/ProductInfo';
 import ProductDetails from '../components/ProductDetails';
-import RelatedProducts from '../components/RelatedProducts';
 
 const Home = () => {
 
@@ -40,45 +39,6 @@ const Home = () => {
     rating: 4.8,
     reviewCount: 156,
   }
-  // Mock related products
-  const relatedProducts = [
-    {
-      id: 'box-small-001',
-      name: 'Small Storage Box',
-      price: 29.99,
-      image:
-        'https://images.unsplash.com/photo-1589758438368-0ad531db3366?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      rating: 4.5,
-      reviewCount: 87,
-    },
-    {
-      id: 'box-large-001',
-      name: 'Large Storage Box',
-      price: 69.99,
-      image:
-        'https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      rating: 4.7,
-      reviewCount: 112,
-    },
-    {
-      id: 'box-decorative-001',
-      name: 'Decorative Storage Box',
-      price: 39.99,
-      image:
-        'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      rating: 4.3,
-      reviewCount: 64,
-    },
-    {
-      id: 'box-set-001',
-      name: 'Box Set (3 Pieces)',
-      price: 99.99,
-      image:
-        'https://images.unsplash.com/photo-1594016114659-0564f7c115ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      rating: 4.9,
-      reviewCount: 203,
-    },
-  ]
 
   return (
     <>
@@ -99,8 +59,6 @@ const Home = () => {
         </div>
         {/* Product Details */}
         <ProductDetails product={product} />
-        {/* Related Products */}
-        <RelatedProducts products={relatedProducts} />
       </div>
     </>
   );
