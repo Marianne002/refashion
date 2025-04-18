@@ -51,7 +51,7 @@ const ProductDetails = ({ product }) => {
               {Object.entries(product.specifications).map(([label, value]) => (
                 <div key={label} className="border-b pb-3">
                   <dt className="font-medium text-gray-500">
-                    {label.charAt(0).toUpperCase() + label.slice(1).replace(/([A-Z])/g, ' €1')}
+                    {label.charAt(0).toUpperCase() + label.slice(1).replace(/([A-Z])/g, ' ')}
                   </dt>
                   <dd className="mt-1 text-gray-900">{value}</dd>
                 </div>

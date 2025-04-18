@@ -9,7 +9,7 @@ const Home = () => {
 
   const product = {
     id: 'box-premium-001',
-    name: 'Box',
+    name: 'Achète ta Box',
     price: 6,
     discount: 7,
     description:
@@ -30,9 +30,9 @@ const Home = () => {
     },
     images: [
       '/img/rebox.png',
-      '/img/rebox.png',
-      '/img/rebox.png',
-      '/img/rebox.png',
+      '/img/rebox1.png',
+      '/img/rebox2.png',
+      '/img/rebox3.png',
     ],
     stock: 42,
     rating: 4.8,
