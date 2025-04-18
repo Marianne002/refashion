@@ -25,25 +25,25 @@ const ProductInfo = ({ product }) => {
       {/* Rating */}
       <div className="flex items-center">
         <div className="flex text-yellow-400">
-        {/* Stars Icon */}
+          {/* Stars Icon */}
         </div>
         <span className="ml-2 text-sm text-gray-600">
-          {product.rating} ({product.reviewCount} reviews)
+          {product.rating} ({product.reviewCount} avis)
         </span>
       </div>
 
       {/* Price */}
       <div className="flex items-center">
         <span className="text-2xl font-bold text-gray-900">
-          ${product.price.toFixed(2)}
+          €{product.price.toFixed(2)}
         </span>
         {product.discount && (
           <>
             <span className="ml-3 text-gray-500 line-through">
-              ${product.discount.toFixed(2)}
+              €{product.discount.toFixed(2)}
             </span>
             <span className="ml-3 text-sm text-green-600 font-medium">
-              Save ${(product.discount - product.price).toFixed(2)}
+              Save €{(product.discount - product.price).toFixed(2)}
             </span>
           </>
         )}
@@ -54,7 +54,7 @@ const ProductInfo = ({ product }) => {
 
       {/* Features */}
       <div className="space-y-2">
-        <h3 className="font-medium text-gray-900">Key Features:</h3>
+        <h3 className="font-medium text-gray-900">Caractéristiques principales :</h3>
         <ul className="list-disc pl-5 space-y-1">
           {product.features.map((feature, index) => (
             <li key={index} className="text-gray-700">
@@ -85,11 +85,11 @@ const ProductInfo = ({ product }) => {
             </button>
           </div>
           <span className="ml-3 text-sm text-gray-500">
-            {product.stock} boxes available
+            {product.stock} boxs disponibles
           </span>
         </div>
         <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-medium transition-colors">
-          Add to Cart - ${(product.price * quantity).toFixed(2)}
+          Ajouter au panier - €{(product.price * quantity).toFixed(2)}
         </button>
       </div>
 
@@ -97,23 +97,23 @@ const ProductInfo = ({ product }) => {
       <div className="border-t border-gray-200 pt-6 space-y-4">
         <div className="flex">
           <div>
-            <h4 className="font-medium text-gray-900">Free Shipping</h4>
-            <p className="text-sm text-gray-600">Orders over $35 ship free</p>
+            <h4 className="font-medium text-gray-900">Livraison Gratuite</h4>
+            <p className="text-sm text-gray-600">Livraison offerte à partir de 35 € d’achat</p>
           </div>
         </div>
         <div className="flex">
           <div>
-            <h4 className="font-medium text-gray-900">Quality Guarantee</h4>
+            <h4 className="font-medium text-gray-900">Qualité Garantie</h4>
             <p className="text-sm text-gray-600">
-              Satisfaction guaranteed or your money back
+              Satisfait ou remboursé
             </p>
           </div>
         </div>
         <div className="flex">
           <div>
-            <h4 className="font-medium text-gray-900">Easy Returns</h4>
+            <h4 className="font-medium text-gray-900">Retours Faciles</h4>
             <p className="text-sm text-gray-600">
-              30-day hassle-free return policy
+              Retour possible sous 30 jours, sans tracas
             </p>
           </div>
         </div>

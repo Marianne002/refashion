@@ -13,20 +13,20 @@ const Home = () => {
     price: 6,
     discount: 7,
     description:
-      'Our Premium Storage Box is crafted from high-quality corrugated cardboard with reinforced corners for extra durability. Perfect for moving, storage, or organizing your home or office.',
+      'Notre Box est fabriquée en carton ondulé de haute qualité avec des coins renforcés pour une durabilité accrue. Parfaite pour les déménagements, le stockage ou l’organisation de votre maison ou bureau.',
     features: [
-      'Made from 100% recycled materials',
-      'Water-resistant coating',
-      'Stackable design',
-      'Reinforced handles for easy carrying',
-      'Collapsible for easy storage when not in use',
+      'Fabriquée à partir de matériaux 100% recyclés',
+      'Revêtement résistant à l’eau',
+      'Design empilable',
+      'Poignées renforcées pour un transport facile',
+      'Pliable pour un rangement compact lorsqu’elle n’est pas utilisée',
     ],
     specifications: {
-      dimensions: '18" × 14" × 12"',
-      weight: '1.2 lbs',
-      material: 'Corrugated cardboard, 3-ply construction',
-      loadCapacity: 'Up to 65 lbs',
-      color: 'Kraft brown',
+      dimensions: '45,7 × 35,6 × 30,5 cm',
+      weight: '0,54 kg',
+      material: 'Carton ondulé, construction triple épaisseur',
+      loadCapacity: 'Jusqu’à 30 kg',
+      color: 'Brun kraft',
     },
     images: [
       '/img/rebox.png',
@@ -46,7 +46,7 @@ const Home = () => {
       <div className="container mx-auto px-4 py-8">
         {/* Breadcrumb */}
         <div className="text-sm text-gray-500 mb-6">
-          <span className="hover:text-gray-700 cursor-pointer">Products</span>{' '}
+          <span className="hover:text-gray-700 cursor-pointer">Produits</span>{' '}
           &gt;{' '}
           <span className="font-medium text-gray-700">Box</span>
         </div>

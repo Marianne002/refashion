@@ -18,13 +18,13 @@ const ProductGallery = ({ images }) => {
           <button
             key={index}
             onClick={() => setMainImage(image)}
-            className={`border-2 rounded-md overflow-hidden ${
+            className={`border-2 rounded-md overflow-hidden €{
               mainImage === image ? 'border-blue-500' : 'border-gray-200'
             }`}
           >
             <img
               src={image}
-              alt={`Product thumbnail ${index + 1}`}
+              alt={`Product thumbnail €{index + 1}`}
               className="w-full h-auto object-cover aspect-square"
             />
           </button>
