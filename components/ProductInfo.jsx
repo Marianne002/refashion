@@ -88,7 +88,7 @@ const ProductInfo = ({ product }) => {
             {product.stock} boxs disponibles
           </span>
         </div>
-        <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-medium transition-colors">
+        <button className="w-full bg-black text-white py-3 px-6 rounded-md font-medium transition-colors">
           Ajouter au panier - €{(product.price * quantity).toFixed(2)}
         </button>
       </div>

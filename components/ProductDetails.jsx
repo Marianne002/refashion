@@ -12,7 +12,7 @@ const ProductDetails = ({ product }) => {
             onClick={() => setActiveTab('specifications')}
             className={`py-4 px-1 font-medium text-sm border-b-2 €{
               activeTab === 'specifications'
-                ? 'border-blue-600 text-blue-600'
+                ? 'border-gray-600 text-gray-600'
                 : 'border-transparent text-gray-500 hover:text-gray-700'
             }`}
           >
@@ -22,7 +22,7 @@ const ProductDetails = ({ product }) => {
             onClick={() => setActiveTab('shipping')}
             className={`py-4 px-1 font-medium text-sm border-b-2 €{
               activeTab === 'shipping'
-                ? 'border-blue-600 text-blue-600'
+                ? 'border-gray-600 text-gray-600'
                 : 'border-transparent text-gray-500 hover:text-gray-700'
             }`}
           >
@@ -32,7 +32,7 @@ const ProductDetails = ({ product }) => {
             onClick={() => setActiveTab('reviews')}
             className={`py-4 px-1 font-medium text-sm border-b-2 €{
               activeTab === 'reviews'
-                ? 'border-blue-600 text-blue-600'
+                ? 'border-gray-600 text-gray-600'
                 : 'border-transparent text-gray-500 hover:text-gray-700'
             }`}
           >
@@ -93,7 +93,7 @@ const ProductDetails = ({ product }) => {
               <h3 className="text-lg font-medium text-gray-900">
                 Avis des clients
               </h3>
-              <button className="text-sm font-medium text-blue-600 hover:text-blue-500">
+              <button className="text-sm font-medium text-gray-600 hover:text-gray-500">
                 Rédiger un avis
               </button>
             </div>
@@ -140,7 +140,7 @@ const ProductDetails = ({ product }) => {
               </div>
             </div>
 
-            <button className="text-sm font-medium text-blue-600 hover:text-blue-500">
+            <button className="text-sm font-medium text-gray-600 hover:text-gray-500">
               Charger plus d’avis
             </button>
           </div>

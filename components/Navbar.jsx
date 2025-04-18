@@ -8,7 +8,7 @@ const Navbar = () => {
                 <div className="container mx-auto px-4 py-4 flex items-center justify-between">
                     <div className="flex items-center">
                         <a href="/" className="text-xl font-bold text-gray-800">
-                            Re_Fashion
+                            Re_Box
                         </a>
                         <button className="ml-4">
                             {/* Menu Icon */}

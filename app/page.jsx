@@ -42,21 +42,33 @@ const Home = () => {
   return (
     <>
       <title>Re_Box - Re_Fashion</title>
+      <meta name="description" content="Re_Box - Re_Fashion" />
+      <meta keywords="Re_Box, Re_Fashion, Box, Déménagement, Rangement" />
 
+      <div className="hero-section text-center text-black">
+        {/* Hero Section */}
+        <h1>
+          Un trou ? Un accroc ?
+          <br />
+          Une Re_Box
+          <br />
+          et c'est réglé.
+        </h1>
+      </div>
       <div className="container mx-auto px-4 py-8">
         {/* Breadcrumb */}
-        <div className="text-sm text-gray-500 mb-6">
+        {/* <div className="text-sm text-gray-500 mb-6" aria-label="Fil d’Ariane">
           <span className="hover:text-gray-700 cursor-pointer">Produits</span>{' '}
           &gt;{' '}
-          <span className="font-medium text-gray-700">Box</span>
-        </div>
+          <span className="font-medium text-gray-700" aria-current="page">Box</span>
+        </div> */}
         {/* Product Main Section */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16" aria-label="Présentation du produit">
           <ProductGallery images={product.images} />
           <ProductInfo product={product} />
         </div>
         {/* Product Details */}
-        <ProductDetails product={product} />
+        <ProductDetails aria-label="Détails du produit" product={product} />
       </div>
     </>
   );
