@@ -3,14 +3,18 @@
 
 /* Custom Styles */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-footer {
-    background-color: #DCDF6D;
+.navbar, footer {
+  background-color: #DCDF6D;
 }
 
 .footer-content {
-    background-color: #000000;
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 30px;
 }
